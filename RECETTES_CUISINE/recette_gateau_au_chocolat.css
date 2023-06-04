@@ -1,0 +1,411 @@
+ .contenu{
+    overflow: auto;
+}
+body {
+    background-color: aquamarine;/*#8BA1BB;*/
+    font-family: Arial;
+    margin: 0;
+    
+}
+nav {
+    margin: 0px 10% 7px 10%;
+    line-height: 32px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    /*display: block;*/
+}
+nav ul li.menu_principal{
+    /*display: inline-block;*/
+    /*display: inline-block;*/
+    list-style-type: none;
+    width: 123px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+    /*padding-top: 4px;
+    padding-bottom: 4px;*/
+    text-align: center;
+    position: relative;
+}
+nav ul li.menu_principal a.enteteMenuPrincipal {
+    display: block;
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+    width: 100%;
+    margin-left: auto;/*3px;*/
+    margin-right: auto;/*5px;*/
+    margin: 0;  /*===================*/
+    padding-left: 0px;/*5px;*/
+    padding-right: 0px;/*5px;*/
+    padding-top: 0px;/*3px;*/
+    padding-bottom: 0px;/*3px;*/
+    background-color: orange;
+}
+ .sousMenu, .sousMenu.li {                /*nav > ul li*/
+    display: none;
+    /*text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;*/
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 238, 126);
+    width: 100%;
+    position: absolute;
+    /*z-index: 1000;*/
+}
+a.lienSousMenuPrincipal{
+    display: block;
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-color: rgb(217, 245, 242);
+    width: 123px;
+}
+nav > ul li:hover .sousMenu{
+    display: block;
+}
+.sousMenu li.enteteSousMenu {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    display: block;
+    background-color: rgb(240, 238, 126);
+}
+/*header li a{
+    display: block;
+    padding: 10px;
+}*/
+nav ul li.menu_principal a:hover{
+    background-color: #1abc9c;
+    color: #fff;
+    width: 100%;
+}
+/*============================ CONTENU DE LA PAGE =======================================================*/
+div.contenu {
+    background-color: white;
+    margin: 10px 10% 0px 10%;
+    padding: 30px;
+    box-shadow: 0px 0px 8px 8px rgb(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+p.description {
+    text-align: center;
+    max-width: 600px;/*400px;*/
+    display: inline-block;
+    font-size: 15px;
+}
+div.description {
+    text-align: center;
+    /*background-color: blue;*/
+}
+p.categorie {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    padding: 0px 40px;
+    font-weight: bold;
+    font-size: 12px;
+    height: 5px;
+    width: 400px;
+    /*text-align: center;*/
+    /*vertical-align: text-bottom;*/
+    padding-top: 1px;
+    padding-bottom: 9px;
+}
+div.categorie {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: -45px;
+}
+div.separateur {
+    width: 150px;
+    height: 1.6px;
+    background-color: black;
+    margin: auto;
+}
+.imageGateau {
+    width: 50%; /*100%*/
+    display: block;
+    max-height: 600px;
+    object-fit: cover;
+    min-height: 300px; /*200px*/
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.info {
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("../RECETTES_CUISINE/image_fond_recettes_categories2.jpg");
+}
+table.info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: darkgreen;/*white;*/
+    background-color: #ffffffC0;/*#ffa500C0;/*#7fffd4C0;/*#6C829DC0;*/
+    height: 45px;
+}
+table.info td {
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+}
+table.info th {
+    text-align: center;
+    font-size: 16px;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+}
+div.colonne {
+    width: 45%;
+    margin-top: 20px;
+}
+div.colonne1 {
+/*background-color: lightblue;*/
+display: inline-block;
+margin-right: 10%;
+}
+div.colonne2 {
+float: right;
+}
+div.colonne h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #7fffd4;/*#6C829D;*/
+    padding-bottom: 5px;
+}
+div.ingredients p {
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #7fe3a7;/*lightgrey;*/
+    padding: 8px 0;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+table.preparation p.numero {
+    background-color: #7fffd4;/*#6C829D;*/
+    color: darkgreen;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 9px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+/*table.preparation td {
+    vertical-align: top;
+}*/
+table.preparation td.preparation_etape {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10;
+    
+}
+
+/*================== PIED DE PAGE ==========================================================================*/
+footer{
+    /*display: block;*/
+    background-color: aquamarine;/*#8BA1BB;*/
+    font-family: Arial;
+    margin-top: 20px;
+    /*vertical-align: bottom;*/
+
+    /*padding:4px 4px 4px 4px;*/
+	color: white;
+	font-family: Comic Sans MS;
+	font-weight: normal;
+	font-style: italic;
+	text-align:left;
+	font-size: 17px;
+	background-color: rgba(0, 0, 0, 0);
+}
+div.piedDePage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    margin: 5px 10% 0px 10%;
+    padding: 20px;
+    height: 80px;;
+    /*width: 100%;*/
+    box-shadow: 0px 0px 8px 8px rgb(0, 0, 0, 0.1);
+    background-image: url("image_pied_page.jpg");
+    vertical-align: bottom;
+
+    position: relative;
+}
+img.piedDePage{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+/*-------------- MON PROFIL - CONTACT - SUIVEZ-NOUS --------------------------------------------*/
+.containerliensUtiles{
+	/*display: inline-block;*/
+	/*position: absolute;*/
+	border: 1px solid white;
+	width: 210px;/*230px;*/
+	height: 100px;
+	margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 15px;
+    top: 0%;
+}
+.boxTitreLiensUtiles{
+	display: block;
+	position: relative;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	width: 180px;/*200px;*/
+	height: 30px;
+	border: 0px solid white;
+}
+.titreLiensUtiles{
+	display: block;
+	/*position: absolute;*/
+	font-size: 24px;
+	text-shadow: 2px 2px 4px black;
+	font-family: Bahnschrift Condensed;
+	font-weight: bold;
+	border-bottom: 3px solid orange;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	width: 180px;/*200px;*/
+	text-align: center;
+}
+.boxLienUtile{
+	display: block;
+	/*position: absolute;*/
+	width: 180px;/*200px;*/
+	height: 15px;
+	margin-left: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 15px;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	/*border-bottom: 1px dashed gray;*/
+}
+.lienUtile{
+	height: 20px;
+	font-weight: normal;
+	font-style: italic;
+	text-decoration: none;
+	color: white;
+	font-family: Comic Sans MS, sans-serif, 'Segoe UI';
+	font-size: 17px;
+}
+.textlienFonctionPublique {
+	text-align: center;
+}
+.textlienFonctionPublique :hover {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+/*------------- SUIVEZ NOUS ------------------------------------------------------*/
+.boxLienEmail{
+	display: block;
+	width: 40px;
+	height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+	text-align: center;
+}
+.iconeEmail{
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	object-fit: cover;
+}
+.boxLienEmail :hover{
+	box-shadow: 0px 0px 2px 3px white;
+}
+/*---------------------- RECETTES PAR CATEGORIES ----------------------------------------------*/
+.contenu_par_categorie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url("image_fond_recettes_categories3.jpg");
+    padding: 8px;
+}
+.containerBoxRecetteCategorie{
+    border: 3px solid white;
+	width: 310px;/*230px;*/
+	height: 200px;
+	margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 15px;
+    top: 0%;
+    border-radius: 3%;
+    box-shadow: 0px 0px 8px 8px rgb(0, 0, 0, 0.1);
+}
+.boxImageRecette{
+    width: 85%;
+    height: 85%;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titreLiensImage {
+    border: 2px solid beige;
+    padding-bottom: 0px;
+}
+.titreLiensImage, .texteLienBoisson {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11;
+    margin-bottom: 4px;
+    text-shadow: 2px 2px 4px gray;
+}
+.texteLienBoisson {
+    /*height: 20px;*/
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid orange;
+}
+.ImageBoisson {
+    display: block;
+    height: 100%;
+    padding: 0%;
+    object-fit: cover;
+}
